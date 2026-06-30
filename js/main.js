@@ -186,3 +186,37 @@ if (form) {
     // Otherwise let Formspree handle it naturally
   });
 }
+
+// ── SERVICE TABS ──────────────────────────────────────────
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabPanels = document.querySelectorAll('.tab-panel');
+
+tabBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.tab;
+
+    tabBtns.forEach(b => b.classList.remove('active'));
+    tabPanels.forEach(p => p.classList.remove('active'));
+
+    btn.classList.add('active');
+    const panel = document.getElementById('tab-' + target);
+    if (panel) {
+      panel.classList.add('active');
+      // Re-run reveal for newly visible cards
+      panel.querySelectorAll('.service-card').forEach((el, i) => {
+        el.classList.remove('visible');
+        setTimeout(() => el.classList.add('visible'), i * 55);
+      });
+    }
+  });
+});
+
+// Activate first tab cards on load
+(function() {
+  const first = document.querySelector('.tab-panel.active');
+  if (first) {
+    first.querySelectorAll('.service-card').forEach((el, i) => {
+      setTimeout(() => el.classList.add('visible'), 200 + i * 60);
+    });
+  }
+})();
