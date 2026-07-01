@@ -1,6 +1,6 @@
-# Website
+# Koash Technologies — Website
 
-Modern static website for . Three practice areas: **Security**, **Software Development**, and **AI & Automation**. Pure HTML/CSS/JS — no build tools, no dependencies. Drop it on GitHub Pages and it's live.
+Modern static website for [koash.tech](https://koash.tech). Three practice areas: **Security**, **Software Development**, and **AI & Automation**. Pure HTML/CSS/JS — no build tools, no dependencies. Drop it on GitHub Pages and it's live.
 
 ---
 
@@ -106,7 +106,7 @@ The form uses [Formspree](https://formspree.io) — free up to 50 submissions/mo
 ## File structure
 
 ```
-tech/
+koash-tech/
 ├── index.html              # Homepage
 ├── css/
 │   └── style.css           # Full design system + responsive

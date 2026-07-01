@@ -178,6 +178,12 @@ a { color: inherit; text-decoration: none; }
   border-radius: var(--r-sm);
 }
 
+.nav__logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
 .logo-text {
   font-family: var(--font-display);
   font-weight: 700;
@@ -434,6 +440,16 @@ a { color: inherit; text-decoration: none; }
 }
 
 .service-card--wide .service-card__icon {
+  flex-shrink: 0;
+}
+
+.service-card--full {
+  grid-column: span 3;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.service-card--full .service-card__icon {
   flex-shrink: 0;
 }
 
@@ -1009,6 +1025,11 @@ a { color: inherit; text-decoration: none; }
   }
 
   .service-card--wide {
+    grid-column: span 1;
+    flex-direction: column;
+  }
+
+  .service-card--full {
     grid-column: span 1;
     flex-direction: column;
   }
