@@ -1,6 +1,6 @@
 # Koash Technologies — Website
 
-Modern static website for [koash.tech](https://koash.tech). Three practice areas: **Security**, **Software Development**, and **AI & Automation**. Pure HTML/CSS/JS — no build tools, no dependencies. Drop it on GitHub Pages and it's live.
+Modern static website for . Three practice areas: **Security**, **Software Development**, and **AI & Automation**. Pure HTML/CSS/JS — no build tools, no dependencies. Drop it on GitHub Pages and it's live.
 
 ---
 
